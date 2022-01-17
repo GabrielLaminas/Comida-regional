@@ -1,0 +1,27 @@
+.btn{
+  margin-right: 8px;
+  padding: 16px 32px;
+  display: inline-block;
+  background-color: $color-verde-medio;
+  color: $color-font-white;
+  font-family: $font-2-rubik;
+  font-size: 1.125rem;
+
+  &:hover{
+    transition: all .2s;
+    background-color: rgba(
+      $color: $color-verde-medio, 
+      $alpha: .9
+    );
+  }
+}
+
+.btn--outline{
+  padding: 16px 32px;
+  display: inline-block;
+  background-color: transparent;
+  color: $color-font-verde-medio;
+  font-family: $font-2-rubik;
+  font-size: 1.125rem;
+  border: 1px solid $color-font-verde-medio;
+}

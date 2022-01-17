@@ -4,60 +4,64 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="">
+  <link rel="stylesheet" href="src/scss/style.css">
   <title>Comida Regional</title>
 </head>
 <body>
   <header>
-    <div>
-      <p>Segunda/Sexta - 11:30h às 22:00h</p>
-      <p>+55 91 11111-0000</p>
-      <p>Avenida, 22, Bairro</p>
+    <div class="header__info">
+      <div class="container">
+        <p>Segunda/Sexta - 11:30h às 22:00h</p>
+        <p>+55 91 11111-0000</p>
+        <p>Avenida, 22, Bairro</p>
+      </div>
     </div>
 
-    <div>
-      <a>
-        <img src="public/logo.svg" alt="logomarca">
-      </a>
-
-      <nav>
-        <span></span>
-
-        <ul>
-          <li><a href="#">Principal</a></li>
-          <li><a href="#">Pratos</a></li>
-          <li><a href="#">Contato</a></li>
-        </ul>
-      </nav>
+    <div class="header__menu">
+      <div class="container">
+        <a href="index.html">
+          <img src="public/logo.svg" alt="logomarca">
+        </a>
+  
+        <nav class="menu__nav">
+          <span></span>
+  
+          <ul class="menu__nav__link">
+            <li><a href="#">Principal</a></li>
+            <li><a href="#">Pratos</a></li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
 
   <main>
-    <div>
-      <h1>
-        Explore o que tem de melhor na comida regional paraense
-      </h1>
-      <p>
-        Acompanhe os pratos mais famosos só encontrado 
-        na região Norte com um preço que 
-        cabe no seu bolso.
-      </p>
-      <a href="#">Ver pratos</a>
-      <a href="#">Entrar em contato</a>
-    </div>
-
-    <div>
-      <img src="public/icon/Chef-ilustration.svg" alt="chef em uma cozinha">
+    <div class="container">
+      <div class="main__infos">
+        <h1 class="main__titulo">
+          Explore o que tem de melhor na comida regional paraense
+        </h1>
+        <p class="main__corpotexto">
+          Acompanhe os pratos mais famosos só encontrado 
+          na região Norte com um preço que 
+          cabe no seu bolso.
+        </p>
+        <a class="btn" href="#">Ver pratos</a>
+        <a class="btn--outline" href="#">Entrar em contato</a>
+      </div>
+  
+      <div class="main__img">
+        <img src="public/icon/Chef-ilustration.svg" alt="chef em uma cozinha">
+      </div>
     </div>
   </main>
 
-  <section>
-    <blockquote>
-      <p>
-        Não existe amor mais sincero do que aquele pela comida.
-      </p>
-      <small>George Bernard Shaw</small>
-    </blockquote>
+  <section class="intro">
+    <p>
+      Não existe amor mais sincero do que aquele pela comida.
+    </p>
+    <small>George Bernard Shaw</small>
   </section>
 
   <section>
@@ -77,7 +81,7 @@
     </div>
 
     <div>
-      <img src="public/images/foto2-patotucupi.jpg alt=" alt="prato do tucupi">
+      <img src="public/images/foto2-patotucupi.jpg" alt="prato do tucupi">
       <p>R$ 30.00</p>
       <h3>Pato no tucupi</h3>
       <p>Neste prato contém:</p>
