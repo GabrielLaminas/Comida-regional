@@ -2,3 +2,18 @@
 
 $font-1-gilroy: 'Gilroy';
 $font-2-rubik: 'Rubik', sans-serif;
+
+@mixin titulos-h2 {
+  margin-bottom: 40px;
+  color: $color-font-verde-dark;
+  font-family: $font-1-gilroy;
+  font-size: 2.5rem;
+}
+
+@mixin titulos-h3 {
+  padding: 16px;
+  color: $color-font-verde-dark;
+  font-family: $font-1-gilroy;
+  font-size: 1.5rem;
+  text-align: center;
+}

@@ -27,7 +27,7 @@ img {
 }
 
 .btn {
-  margin-right: 8px;
+  margin: 8px 8px 8px 0;
   padding: 16px 32px;
   display: inline-block;
   background-color: #1B5E20;
@@ -43,6 +43,7 @@ img {
 }
 
 .btn--outline {
+  margin: 8px 8px 8px 0;
   padding: 16px 32px;
   display: inline-block;
   background-color: transparent;
@@ -150,26 +151,121 @@ main .container .main__img {
 
 .intro {
   margin: 80px 0;
-  padding: 180px 0;
-  background-image: url(/public/images/bg-info.jpg);
+  padding: 100px 0;
+  background-image: url(/public/images/bg-info.png);
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
 }
 
+.intro p::after {
+  content: '';
+  width: 60px;
+  height: 3px;
+  margin: 24px auto;
+  display: block;
+  background-color: #FFFFFF;
+}
+
 .intro p {
-  max-width: 70%;
+  max-width: 80%;
   margin: 0 auto;
+  color: #FFFFFF;
   font-family: "Gilroy";
-  font-size: 3rem;
+  font-size: 4rem;
+  font-style: italic;
 }
 
 .intro small {
-  border: 1px solid red;
   margin: 0 auto;
   display: block;
   color: #FFFFFF;
   font-family: "Rubik", sans-serif;
+  font-size: 1.125rem;
+}
+
+.produtos {
+  padding: 80px 0;
+}
+
+.produtos h2 {
+  margin-bottom: 40px;
+  color: #081A09;
+  font-family: "Gilroy";
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.grid__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  gap: 24px;
+}
+
+.grid__itens {
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 24px rgba(8, 26, 9, 0.25);
+          box-shadow: 0 0 24px rgba(8, 26, 9, 0.25);
+}
+
+.grid__itens .grid__itens__preco {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 8px 16px;
+  background-color: #65B168;
+  color: #FFFFFF;
+  font-family: "Rubik", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.grid__itens .grid__itens__titulo {
+  padding: 16px;
+  color: #081A09;
+  font-family: "Gilroy";
   font-size: 1.5rem;
+  text-align: center;
+}
+
+.grid__itens .grid__itens__intro {
+  padding: 0 16px;
+  color: #223112;
+  font-family: "Rubik", sans-serif;
+  font-size: 1rem;
+}
+
+.grid__itens .grid__itens__lista {
+  margin: 24px 0;
+  padding: 0 24px;
+  color: #223112;
+  font-family: "Rubik", sans-serif;
+}
+
+.grid__itens .grid__itens__lista li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 8px 0;
+}
+
+.grid__itens .grid__itens__lista li::before {
+  content: '';
+  width: 5px;
+  height: 5px;
+  margin: auto 8px;
+  display: inline-block;
+  background-color: #65B168;
+  border: 1px solid #081A09;
+  border-radius: 50%;
 }
 /*# sourceMappingURL=style.css.map */
