@@ -8,6 +8,7 @@ $font-2-rubik: 'Rubik', sans-serif;
   color: $color-font-verde-dark;
   font-family: $font-1-gilroy;
   font-size: 2.5rem;
+  text-align: center;
 }
 
 @mixin titulos-h3 {
@@ -16,4 +17,45 @@ $font-2-rubik: 'Rubik', sans-serif;
   font-family: $font-1-gilroy;
   font-size: 1.5rem;
   text-align: center;
+}
+
+@mixin titulos-h4 {
+  padding: 16px 0;
+  color: $color-font-white;
+  font-family: $font-1-gilroy;
+  font-size: 1.5rem;
+}
+
+@mixin contato-label {
+  margin-bottom: 8px;
+  display: block;
+  color: $color-font-verde-dark;
+  font-family: $font-2-rubik;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+@mixin contato-input {
+  width: 100%;
+  margin: 8px 0 16px 0;
+  padding: 16px 8px;
+  display: block;
+  color: $color-font-verde-medio;
+  font-family: $font-2-rubik;
+  font-size: 1rem;
+  border: 2px solid $color-verde-medio;
+  border-radius: 4px;
+}
+
+@mixin contato_textarea {
+  width: 100%;
+  height: 150px;
+  margin: 8px 0 16px 0;
+  padding: 8px;
+  display: block;
+  color: $color-font-verde-medio;
+  font-family: $font-2-rubik;
+  font-size: 1rem;
+  border: 2px solid $color-verde-medio;
+  border-radius: 4px;
 }

@@ -1,0 +1,43 @@
+.contato{
+  margin: 80px 0;
+
+  h2{
+    @include titulos-h2;
+  }
+
+  .container{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .contato__map,
+  .contato__form{
+    flex: 1;
+  }
+}
+
+.contato__map{
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.contato__form{
+
+  label{
+    @include contato-label; 
+  }
+  input{
+    @include contato-input;
+  }
+  textarea{
+    @include contato_textarea;
+  }
+  button{
+    width: 100%;
+    margin-top: 24px;
+    display: block;
+    font-size: 1.5rem;
+    border: none;
+  }
+}

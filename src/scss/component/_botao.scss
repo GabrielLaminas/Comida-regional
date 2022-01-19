@@ -6,6 +6,7 @@
   color: $color-font-white;
   font-family: $font-2-rubik;
   font-size: 1.125rem;
+  cursor: pointer;
 
   &:hover{
     transition: all .2s;
@@ -24,5 +25,6 @@
   color: $color-font-verde-medio;
   font-family: $font-2-rubik;
   font-size: 1.125rem;
+  cursor: pointer;
   border: 1px solid $color-font-verde-medio;
 }

@@ -3,7 +3,6 @@
 
   h2{
     @include titulos-h2;
-    text-align: center;
   }
 }
 
@@ -23,7 +22,7 @@
   overflow: hidden;
   box-shadow: 0 0 24px rgba(
     $color: $color-font-verde-dark, 
-    $alpha: .25
+    $alpha: .2
   );
 
   .grid__itens__preco{
