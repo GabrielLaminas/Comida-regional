@@ -9,9 +9,19 @@
   .container{
     display: flex;
     gap: 100px;
-  }
-  .footer__info{
 
+    @include tablet{
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 32px;
+    }
+
+    @include mobile-large{
+      gap: 16px;
+    }
+  }
+
+  .footer__info{
     h4{
       @include titulos-h4;
     }
@@ -21,6 +31,10 @@
       color: $color-font-white;
       font-family: $font-2-rubik;
       font-size: 1.125rem;
+    }
+
+    @include mobile-large{
+      text-align: center;
     }
   }
 
@@ -55,6 +69,7 @@
   a{
     color: $color-font-white;
     text-decoration: underline;
+
     &:hover{
       color: $color-verde-light;
       text-decoration: none;

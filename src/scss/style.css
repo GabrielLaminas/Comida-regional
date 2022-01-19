@@ -178,12 +178,30 @@ main .container .main__img {
   font-style: italic;
 }
 
+@media screen and (max-width: 768px) {
+  .intro p {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .intro p {
+    font-size: 2rem;
+  }
+}
+
 .intro small {
   margin: 0 auto;
   display: block;
   color: #FFFFFF;
   font-family: "Rubik", sans-serif;
   font-size: 1.125rem;
+}
+
+@media screen and (max-width: 768px) {
+  .intro {
+    padding: 60px 0;
+  }
 }
 
 .produtos {
@@ -363,6 +381,23 @@ main .container .main__img {
   gap: 100px;
 }
 
+@media screen and (max-width: 768px) {
+  .footer__social .container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 32px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .footer__social .container {
+    gap: 16px;
+  }
+}
+
 .footer__social .footer__info h4 {
   padding: 16px 0;
   color: #FFFFFF;
@@ -375,6 +410,12 @@ main .container .main__img {
   color: #FFFFFF;
   font-family: "Rubik", sans-serif;
   font-size: 1.125rem;
+}
+
+@media screen and (max-width: 576px) {
+  .footer__social .footer__info {
+    text-align: center;
+  }
 }
 
 .footer__social .footer__redesocial h4 {
