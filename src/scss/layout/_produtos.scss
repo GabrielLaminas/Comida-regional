@@ -14,6 +14,15 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 24px;
+
+  @include tablet{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  @include mobile-small{
+    grid-template-columns: 100fr;
+    grid-template-rows: auto;
+  }
 }
 
 .grid__itens{
@@ -68,6 +77,10 @@
         border: 1px solid $color-font-verde-dark;
         border-radius: 50%;
       }
+    }
+
+    @include tablet{
+      padding: 0 16px;
     }
   }
 }

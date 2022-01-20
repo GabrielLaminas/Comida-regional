@@ -8,16 +8,20 @@
 
   .container{
     display: flex;
-    gap: 100px;
 
-    @include tablet{
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 32px;
+    & > div{
+      margin-left: 100px;
+
+      @include tablet{
+        margin-left: 40px;
+      }
+      @include mobile-large{
+        margin: 24px 0 0 0;
+      }
     }
-
     @include mobile-large{
-      gap: 16px;
+      flex-direction: column;
+      align-items: center;
     }
   }
 
@@ -58,7 +62,7 @@
 }
 
 .atribuicao{
-  padding: 24px 0;
+  padding: 24px;
   background-color: $color-verde-dark;
   color: $color-font-white;
   font-family: $font-2-rubik;

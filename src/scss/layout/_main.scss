@@ -1,5 +1,5 @@
 main{
-  padding: 16px 0;
+  padding-top: 24px;
 
   .container{
     color: black;
@@ -10,16 +10,28 @@ main{
     .main__img{
       flex: 1;
     }
+
+    @include tablet{
+      flex-direction: column-reverse;
+    }
   }
 }
 
 .main__infos{
 
   .main__titulo{
-    margin-bottom: 24px;
+    margin-bottom: 16px;
     color: $color-font-verde-dark;
     font-family: $font-1-gilroy;
     font-size: 2.75rem;
+
+    @include tablet{
+      text-align: center;
+    }
+    @include mobile-small{
+      margin-bottom: 24px;
+      font-size: 2rem;
+    }
   }
   .main__corpotexto{
     max-width: 440px;
@@ -27,5 +39,26 @@ main{
     color: $color-font-verde-medio;
     font-family: $font-2-rubik;
     font-size: 1.125rem;
+
+    @include tablet{
+      margin: 0 auto 24px auto;
+      text-align: center;
+    }
   }
+  .main__botao{
+    
+    @include tablet{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    @include mobile-small{
+      text-align: center;
+    }
+  }
+  
+}
+
+.main__img{
+  width: 100%;
 }

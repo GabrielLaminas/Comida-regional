@@ -4,7 +4,7 @@ $font-1-gilroy: 'Gilroy';
 $font-2-rubik: 'Rubik', sans-serif;
 
 @mixin titulos-h2 {
-  margin-bottom: 40px;
+  margin-bottom: 60px;
   color: $color-font-verde-dark;
   font-family: $font-1-gilroy;
   font-size: 2.5rem;
@@ -20,7 +20,7 @@ $font-2-rubik: 'Rubik', sans-serif;
 }
 
 @mixin titulos-h4 {
-  padding: 16px 0;
+  padding: 8px 0 16px 0;
   color: $color-font-white;
   font-family: $font-1-gilroy;
   font-size: 1.5rem;

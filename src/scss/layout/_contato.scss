@@ -8,7 +8,10 @@
   .container{
     display: flex;
     align-items: center;
-    gap: 40px;
+
+    @include mobile-large{
+      flex-direction: column-reverse;
+    }
   }
 
   .contato__map,
@@ -18,11 +21,24 @@
 }
 
 .contato__map{
+  margin-right: 56px;
   overflow: hidden;
   border-radius: 8px;
+  box-shadow: 0 0 24px rgba(
+    $color: $color-font-verde-dark, 
+    $alpha: .2
+  );
+  
+  @include tablet{
+    margin-right: 24px;
+  }
+  @include mobile-large{
+    margin: 24px 0 0 0;
+  }
 }
 
 .contato__form{
+  width: 100%;
 
   label{
     @include contato-label; 
@@ -39,5 +55,9 @@
     display: block;
     font-size: 1.5rem;
     border: none;
+
+    @include tablet{
+      font-size: 1.125rem;
+    }
   }
 }

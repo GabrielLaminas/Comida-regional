@@ -27,4 +27,8 @@
   font-size: 1.125rem;
   cursor: pointer;
   border: 1px solid $color-font-verde-medio;
+
+  @include mobile-small{
+    margin: 8px auto;
+  }
 }
