@@ -106,11 +106,83 @@ img {
           justify-content: space-between;
 }
 
+@media screen and (max-width: 425px) {
+  .header__menu .logo {
+    width: 60%;
+  }
+}
+
+.header__menu .menu__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__menu .menu__nav .nav--botaomobile {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .header__menu .menu__nav .nav--botaomobile {
+    width: 30px;
+    height: 24px;
+    display: block;
+    position: relative;
+    color: #FFFFFF;
+    border-top: 4px solid;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    cursor: pointer;
+  }
+  .header__menu .menu__nav .nav--botaomobile::after, .header__menu .menu__nav .nav--botaomobile::before {
+    content: '';
+    height: 4px;
+    margin-top: 6px;
+    display: block;
+    position: relative;
+    background-color: currentColor;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header__menu .menu__nav .nav--botaomobile.ativo {
+    border-top-color: transparent;
+    color: #FF4338;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header__menu .menu__nav .nav--botaomobile.ativo::after {
+    margin-top: 0px;
+    top: 2px;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header__menu .menu__nav .nav--botaomobile.ativo::before {
+    margin-top: 0px;
+    top: 6px;
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg);
+  }
+}
+
 .header__menu .menu__nav .menu__nav__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 48px;
+}
+
+@media screen and (max-width: 768px) {
+  .header__menu .menu__nav .menu__nav__link {
+    display: none;
+  }
 }
 
 .header__menu .menu__nav a {

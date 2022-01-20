@@ -29,11 +29,70 @@
     justify-content: space-between;
   }
 
+  .logo{
+    @include mobile-small{
+      width: 60%;
+    }
+  }
+
   .menu__nav{
+    display: flex;
+    align-items: center;
+
+    .nav--botaomobile{
+      display: none;
+      
+      @include tablet{
+        width: 30px;
+        height: 24px;
+        display: block;
+        position: relative;
+        color: $color-font-white;
+        border-top: 4px solid;
+        backface-visibility: hidden;
+        cursor: pointer;
+
+        &::after, &::before{
+          content: '';
+          height: 4px;
+          margin-top: 6px;
+          display: block;
+          position: relative;
+          background-color: currentColor;
+        }
+      }
+    }
+
+    .nav--botaomobile.ativo{
+      @include tablet{
+        border-top-color: transparent;
+        color: #FF4338;
+      }
+    }
+
+    .nav--botaomobile.ativo::after{
+      @include tablet{
+        margin-top: 0px;
+        top: 2px;
+        transform: rotate(45deg);
+      }
+    }
+  
+    .nav--botaomobile.ativo::before{
+      @include tablet{
+        margin-top: 0px;
+        top: 6px;
+        transform: rotate(135deg);
+      }
+    }
 
     .menu__nav__link{
       display: flex;
       gap: 48px;
+
+      @include tablet{
+        display: none;
+      }
     }
 
     a{
