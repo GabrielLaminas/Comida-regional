@@ -6,6 +6,10 @@
           box-sizing: border-box;
 }
 
+body.ativo {
+  overflow: hidden;
+}
+
 ul li {
   list-style: none;
 }
@@ -92,6 +96,7 @@ img {
   width: 100%;
   padding: 16px 0;
   background-color: #1B5E20;
+  position: relative;
 }
 
 .header__menu .container {
@@ -144,13 +149,14 @@ img {
     display: block;
     position: relative;
     background-color: currentColor;
+    -webkit-transition: all .3s;
+    transition: all .3s;
   }
 }
 
 @media screen and (max-width: 768px) {
   .header__menu .menu__nav .nav--botaomobile.ativo {
     border-top-color: transparent;
-    color: #FF4338;
   }
 }
 
@@ -160,6 +166,8 @@ img {
     top: 2px;
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg);
+    -webkit-transition: all .25s;
+    transition: all .25s;
   }
 }
 
@@ -169,6 +177,8 @@ img {
     top: 6px;
     -webkit-transform: rotate(135deg);
             transform: rotate(135deg);
+    -webkit-transition: all .25s;
+    transition: all .25s;
   }
 }
 
@@ -176,21 +186,44 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 48px;
 }
 
 @media screen and (max-width: 768px) {
   .header__menu .menu__nav .menu__nav__link {
     display: none;
+    background-color: #1B5E20;
+    border-radius: 4px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header__menu .menu__nav .menu__nav__link.ativo {
+    width: calc(100% - 48px);
+    margin-top: 8px;
+    padding: 24px;
+    position: absolute;
+    top: 78px;
+    left: 24px;
+    z-index: 2;
+    display: block;
   }
 }
 
 .header__menu .menu__nav a {
+  margin-left: 48px;
   padding: 10px 0;
   display: block;
   color: #FFFFFF;
   font-family: "Rubik", sans-serif;
   font-size: 1.125rem;
+}
+
+@media screen and (max-width: 768px) {
+  .header__menu .menu__nav a {
+    margin-left: 0;
+    padding: 16px 0;
+    text-align: center;
+  }
 }
 
 main {
@@ -279,6 +312,11 @@ main .container .main__img {
 
 .main__img {
   width: 100%;
+}
+
+#principal.ativo {
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
 }
 
 .intro {

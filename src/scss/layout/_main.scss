@@ -62,3 +62,7 @@ main{
 .main__img{
   width: 100%;
 }
+
+#principal.ativo{
+  filter: blur(4px);
+}

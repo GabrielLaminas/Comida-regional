@@ -22,6 +22,7 @@
   width: 100%;
   padding: 16px 0;
   background-color: $color-verde-medio;
+  position: relative;
 
   .container{
     display: flex;
@@ -59,6 +60,7 @@
           display: block;
           position: relative;
           background-color: currentColor;
+          transition: all .3s;
         }
       }
     }
@@ -66,7 +68,6 @@
     .nav--botaomobile.ativo{
       @include tablet{
         border-top-color: transparent;
-        color: #FF4338;
       }
     }
 
@@ -75,6 +76,7 @@
         margin-top: 0px;
         top: 2px;
         transform: rotate(45deg);
+        transition: all .25s;
       }
     }
   
@@ -83,24 +85,46 @@
         margin-top: 0px;
         top: 6px;
         transform: rotate(135deg);
+        transition: all .25s;
       }
     }
 
     .menu__nav__link{
       display: flex;
-      gap: 48px;
 
       @include tablet{
         display: none;
+        background-color: $color-verde-medio;
+        border-radius: 4px;
+      }
+    }
+
+    .menu__nav__link.ativo{
+      @include tablet{
+        width: calc(100% - 48px);
+        margin-top: 8px;
+        padding: 24px;
+        position: absolute;
+        top: 78px;
+        left: 24px;
+        z-index: 2;
+        display: block;
       }
     }
 
     a{
+      margin-left: 48px;
       padding: 10px 0;
       display: block;
       color: $color-font-white;
       font-family: $font-2-rubik;
       font-size: 1.125rem;
+
+      @include tablet{
+        margin-left: 0;
+        padding: 16px 0;
+        text-align: center;
+      }
     }
   }
 }

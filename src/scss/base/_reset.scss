@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body.ativo{
+  overflow: hidden;
+}
+
 ul li {
   list-style: none;
 }
