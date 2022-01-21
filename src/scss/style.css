@@ -1,4 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;600&display=swap");
+@-webkit-keyframes show-top {
+  from {
+    top: 0;
+  }
+  to {
+    top: 80px;
+  }
+}
+@keyframes show-top {
+  from {
+    top: 0;
+  }
+  to {
+    top: 80px;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -206,6 +223,10 @@ img {
     left: 24px;
     z-index: 2;
     display: block;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    -webkit-animation: show-top .6s;
+            animation: show-top .6s;
   }
 }
 

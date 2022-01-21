@@ -109,6 +109,8 @@
         left: 24px;
         z-index: 2;
         display: block;
+        transition: all .3s;
+        animation: show-top .6s;
       }
     }
 
