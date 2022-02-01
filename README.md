@@ -12,6 +12,6 @@
 
 # Link
 
-  - Url do site: ![Comida regional](https://gabriellaminas.github.io/Comida-regional/)
+  - Url do site: https://gabriellaminas.github.io/Comida-regional/
 
 # EM DESENVOLVIMENTO
