@@ -4,8 +4,16 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body.ativo{
   overflow: hidden;
+}
+
+body{
+  overflow-x: hidden;
 }
 
 ul li {

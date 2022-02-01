@@ -6,3 +6,46 @@
     top: 80px;
   }
 }
+
+@keyframes show-bottom {
+  from{
+    bottom: -80px;
+  }
+  to{
+    bottom: 0px;
+  }
+}
+
+[data-anime]{
+  opacity: 0;
+  transition: .5s;
+}
+
+[data-anime="topo"]{
+  transform: translate3d(0, -50px, 0);
+
+  @include mobile-small{
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+[data-anime="esquerda"]{
+  transform: translate3d(-50px, 0, 0);
+
+  @include mobile-small{
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+[data-anime="direita"]{
+  transform: translate3d(50px, 0, 0);
+  
+  @include mobile-small{
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+[data-anime].animate{
+  opacity: 1;
+  transform: translate3d(0px, 0px, 0px);
+}
