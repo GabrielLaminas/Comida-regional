@@ -4,4 +4,14 @@
 # Resumo e Descrição do projeto
   Uma landing page que mostra informações sobre um estabelecimento que vende comida regional paraense, você pode ver informações de contato, pratos na qual esse local disponibiliza e entrar em contato a partir de um formulário.
   
- # EM DESENVOLVIMENTO
+# Tecnológias e ferramentas utilizadas
+  - Adobe XD
+  - Html5
+  - Scss(SASS)
+  - JavaScript
+
+# Link
+
+  - Url do site: ![Comida regional](https://gabriellaminas.github.io/Comida-regional/)
+
+# EM DESENVOLVIMENTO
