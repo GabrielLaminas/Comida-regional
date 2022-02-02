@@ -23,26 +23,26 @@
 
 [data-anime="topo"]{
   transform: translate3d(0, -50px, 0);
-
+  /*
   @include mobile-small{
     transform: translate3d(0, 0, 0);
-  }
+  }*/
 }
 
 [data-anime="esquerda"]{
   transform: translate3d(-50px, 0, 0);
-
+  /*
   @include mobile-small{
     transform: translate3d(0, 0, 0);
-  }
+  }*/
 }
 
 [data-anime="direita"]{
   transform: translate3d(50px, 0, 0);
-  
+  /*
   @include mobile-small{
     transform: translate3d(0, 0, 0);
-  }
+  }*/
 }
 
 [data-anime].animate{
