@@ -20,8 +20,9 @@
     grid-template-rows: 1fr 1fr 1fr;
   }
   @include mobile-small{
-    grid-template-columns: 100fr;
+    grid-template-columns: 1fr;
     grid-template-rows: auto;
+    justify-items: center;
   }
 }
 
@@ -83,4 +84,6 @@
       padding: 0 16px;
     }
   }
+
+ 
 }

@@ -506,10 +506,11 @@ main .container .main__img {
 
 @media screen and (max-width: 425px) {
   .grid__container {
-    -ms-grid-columns: 100fr;
-        grid-template-columns: 100fr;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
     -ms-grid-rows: auto;
         grid-template-rows: auto;
+    justify-items: center;
   }
 }
 
