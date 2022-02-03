@@ -16,15 +16,23 @@ debounce = function(func, wait, immediate) {
 
 const btnMenu = document.querySelector('.nav--botaomobile');
 const navLink = document.querySelector('.menu__nav__link');
-//const main = document.querySelector('#principal');
+const navLinks = document.querySelectorAll('.menu__nav__link a');
 
+btnMenu.addEventListener('click', handleClick);
 
 function handleClick({target}){
   target.classList.toggle('ativo');
   navLink.classList.toggle('ativo');
   document.body.classList.toggle('ativo');
-  //main.classList.toggle('ativo')
 }
+
+navLinks.forEach((link) => {
+  link.addEventListener('click', function(e){
+    btnMenu.classList.remove('ativo');
+    navLink.classList.remove('ativo');
+    document.body.classList.remove('ativo');
+  });
+})
 
 window.addEventListener('resize', debounce(function(e) {
   let tamanhoWidth = e.target.innerWidth;
@@ -32,11 +40,8 @@ window.addEventListener('resize', debounce(function(e) {
     btnMenu.classList.remove('ativo');
     navLink.classList.remove('ativo');
     document.body.classList.remove('ativo');
-    //main.classList.remove('ativo')
   }
 }, 200));
-
-btnMenu.addEventListener('click', handleClick);
 
 //Js animação ao Scroll
 const alvo = document.querySelectorAll('[data-anime]');

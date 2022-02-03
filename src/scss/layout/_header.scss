@@ -122,6 +122,24 @@
       font-family: $font-2-rubik;
       font-size: 1.125rem;
 
+      &::after{
+        content: '';
+        width: 0px;
+        height: 2px;
+        margin-top: 1px;
+        display: block;
+        background-color: $color-font-white;
+        transition: .3s;
+
+        @include tablet{
+          display: none;
+        }
+      }
+
+      &:hover::after{
+        width: 100%;
+      }
+
       @include tablet{
         margin-left: 0;
         padding: 16px 0;

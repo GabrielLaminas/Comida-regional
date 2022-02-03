@@ -292,6 +292,27 @@ img {
   font-size: 1.125rem;
 }
 
+.header__menu .menu__nav a::after {
+  content: '';
+  width: 0px;
+  height: 2px;
+  margin-top: 1px;
+  display: block;
+  background-color: #FFFFFF;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+@media screen and (max-width: 768px) {
+  .header__menu .menu__nav a::after {
+    display: none;
+  }
+}
+
+.header__menu .menu__nav a:hover::after {
+  width: 100%;
+}
+
 @media screen and (max-width: 768px) {
   .header__menu .menu__nav a {
     margin-left: 0;
