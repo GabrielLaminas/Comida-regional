@@ -8,13 +8,13 @@
   
 ## SnapShot
 
-  https://github.com/GabrielLaminas/Comida-regional/blob/main/assets/design/regional-desktop.png?raw=true
+  ![Desktop](https://github.com/GabrielLaminas/Comida-regional/blob/main/assets/design/regional-desktop.png?raw=true)
 
-  https://github.com/GabrielLaminas/Comida-regional/blob/main/assets/design/regional-mobile.png?raw=true
+  ![Mobile](https://github.com/GabrielLaminas/Comida-regional/blob/main/assets/design/regional-mobile.png?raw=true)
 
 ## Link
 
-  - Url do site: https://gabriellaminas.github.io/Comida-regional/
+  - Url do site: [Comida Regional](https://gabriellaminas.github.io/Comida-regional/)
 
 ## Tecnológias e ferramentas utilizadas
   
